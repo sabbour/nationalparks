@@ -46,8 +46,8 @@ public class MongoDBConnection {
         String mongoHost = env.getProperty("mongodb.server.host", "127.0.0.1"); // env var MONGODB_SERVER_HOST takes precedence
         String mongoPort = env.getProperty("mongodb.server.port", "27017"); // env var MONGODB_SERVER_PORT takes precedence
         String mongoUri = env.getProperty("uri", "");
-        String mongoUser = env.getProperty("mongodb.user", "mongodb"); // env var MONGODB_USER takes precedence
-        String mongoPassword = env.getProperty("mongodb.password", "mongodb"); // env var MONGODB_PASSWORD takes precedence
+        String mongoUser = env.getProperty("database-user", "mongodb"); // env var database-user takes precedence
+        String mongoPassword = env.getProperty("database-password", "mongodb"); // env var MONGODB_PASSWORD takes precedence
         String mongoDBName = env.getProperty("mongodb.database", "mongodb"); // env var MONGODB_DATABASE takes precedence
         String dbServiceName = env.getProperty("database.service.name", "");
 
